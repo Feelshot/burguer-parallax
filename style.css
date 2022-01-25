@@ -1,0 +1,59 @@
+:root {
+    --Background: linear-gradient(90deg, rgba(34,34,34) 0%, rgba(24,24,24) 50%, rgba(6,6,6) 100%);
+    --Text-principal: rgb(245, 245, 245);
+    --Text-brown-secondary: rgb(88, 63, 52);
+    --Containers-brown-principal: rgb(26, 12, 5);
+    --Containers-yellow-secondary: rgb(241, 204, 60);
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: var(--Background);
+    background-repeat: no-repeat;
+    color: var(--Text-principal);
+}
+a {
+    text-decoration: none;
+    color: var(--Text-brown-secondary);
+}
+h1, h2, h3 {
+    font-family: 'Lobster', cursive;
+}
+p, a, button {
+    font-family: 'Cabin', sans-serif;
+}
+/* ---- HEADER ---- */
+
+/* ---- MAIN ---- */
+.hamburguesa img{
+    width: 100%;
+    height: 100%;
+
+}
+.french-fries {
+    width: 100%;
+    position: relative;
+}
+.french-fries img {
+    position: absolute;
+}
+/* ---- FOOTER ---- */
+footer {
+    background: var(--Containers-brown-principal);
+}
+
+
+
+
+
+
+
+/* =-=-=-=- MEDIAS QUERIES =-=-=-=- */
+@media (min-width: 650px) {
+
+}
+@media (min-width: 950px) {
+
+}
