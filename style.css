@@ -13,10 +13,7 @@ body {
     background: var(--Background);
     background-repeat: no-repeat;
     color: var(--Text-principal);
-    width: 375px;
-    height: 1200px;
     position: relative;
-    border: 2px solid cadetblue;
 }
 a {
     text-decoration: none;
@@ -29,16 +26,46 @@ p, a, button {
     font-family: 'Cabin', sans-serif;
 }
 /* ---- HEADER ---- */
-
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+}
+header img {
+    display: none;
+}
+header h1 {
+    font-size: 50px;
+}
 /* ---- MAIN ---- */
+main{
+    border: 2px solid cadetblue;
+    width: 375px;
+    height: 1200px;
+    margin: 0 auto 0 auto;
+}
 .hamburguesa {
     position: absolute;
 }
-.hamburguesa img{
+.hamburguesa img:nth-child(1){
     position: absolute;
     width: 300px;
     height: auto;
     left: 220px;
+}
+.hamburguesa img:nth-child(2) {
+    position: absolute;
+    width: 250px;
+    height: auto;
+    left: 20px;
+}
+.hamburguesa img:nth-child(3) {
+    position: absolute;
+    width: 400px;
+    height: auto;
+    left: 1px;
+    top: 580px;
 }
 .titulos-hamburguesa div img {
     width: 100px;
@@ -92,8 +119,12 @@ footer {
 
 /* =-=-=-=- MEDIAS QUERIES =-=-=-=- */
 @media (min-width: 650px) {
-
+    header img {
+        display: block;
+    }
 }
 @media (min-width: 950px) {
-
+    header img {
+        display: block;
+    }
 }
