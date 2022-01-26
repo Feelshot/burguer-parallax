@@ -38,60 +38,83 @@ header img {
 header h1 {
     font-size: 50px;
 }
+header button {
+    display: none;
+}
 /* ---- MAIN ---- */
 main{
-    border: 2px solid cadetblue;
-    width: 375px;
-    height: 1200px;
+    /* border: 2px solid cadetblue; */
+    width: 370px;
+    height: 1400px;
     margin: 0 auto 0 auto;
 }
 .hamburguesa {
     position: absolute;
 }
-.hamburguesa img:nth-child(1){
+.hamburguesa .burguer{
     position: absolute;
     width: 300px;
     height: auto;
-    left: 220px;
+    left: -140px;
 }
-.hamburguesa img:nth-child(2) {
+.hamburguesa .salt {
     position: absolute;
-    width: 250px;
+    width: 160px;
     height: auto;
-    left: 20px;
+    left: 210px;
+    top: 120px;
 }
-.hamburguesa img:nth-child(3) {
+.hamburguesa .humo {
     position: absolute;
-    width: 400px;
+    width: 280px;
     height: auto;
-    left: 1px;
-    top: 580px;
+    left: 80px;
+    top: 840px;
+    transform: rotateY(180deg);
 }
-.titulos-hamburguesa div img {
+.hamburguesa .titulos-hamburguesa div img {
     width: 100px;
     height: auto;
 }
 .pan-top, .tocino, .tomate, .carne, .lechuga, .pan-bottom {
     position: absolute;
-    left: 120px;
+    left: 140px;
+}
+.pan-top img, .tocino img, .tomate img, .carne img, .lechuga img, .pan-bottom img {
+    transform: rotate(180deg);
+}
+.titulos-hamburguesa p {
+    position: absolute;
+    font-size: 26px;
+    font-weight: bolder;
+    left: 90px;
 }
 .pan-top {
-    top: 140px;
+    top: 80px;
 }
 .tocino {
-    top: 280px;
+    top: 220px;
 }
 .tomate {
-    top: 410px;
+    top: 350px;
+}
+.tomate img {
+    transform: rotateZ(-170deg);
 }
 .carne {
-    top: 540px;
+    top: 480px;
 }
 .lechuga {
-    top: 680px;
+    top: 640px;
+}
+.lechuga img {
+    transform: rotate(210deg);
 }
 .pan-bottom {
-    top: 820px;
+    top: 770px;
+}
+.pan-bottom img {
+    transform: rotate(210deg);
 }
 
 
@@ -122,9 +145,11 @@ footer {
     header img {
         display: block;
     }
-}
-@media (min-width: 950px) {
-    header img {
+    header button {
         display: block;
     }
+
+}
+@media (min-width: 950px) {
+
 }
